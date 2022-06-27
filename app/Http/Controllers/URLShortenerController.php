@@ -45,7 +45,7 @@ class URLShortenerController extends Controller
             if($urlExist)
             {
                 $response ['exist'] = 1;
-                $response ['url'] = env('APP_URL')."/".$urlExist->hash;
+                $response ['url'] = url('')."/".$urlExist->hash;
             }
             else{
                 $r = $this->checkSafeBrowsing($url); // checking the url is validate by google safe browsing
@@ -60,7 +60,7 @@ class URLShortenerController extends Controller
                     );
                     
                     $response ['exist'] = 0;
-                    $response ['url'] = env('APP_URL')."/".$hash;
+                    $response ['url'] = url('')."/".$hash;
                 }
                 else{
                     $response['error'] =  'The url is not safe';
