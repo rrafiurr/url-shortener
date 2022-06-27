@@ -1,6 +1,6 @@
 <template>   
     <div class="input-group mb-3">
-        <div class="valid-feedback standard" v-if="previoulyCreated">Your URL previously Shorted and here is your url</div>
+        <div class="valid-feedback standard" v-if="previoulyCreated">Your URL previously Shorted! Here is your shorted url</div>
         <input type="text" class="form-control" readonly v-model="shortenUrl" >
         <div class="input-group-append">
             <button class="btn btn-outline-secondary" type="button" ref="clone"  @click="copy">Copy</button>

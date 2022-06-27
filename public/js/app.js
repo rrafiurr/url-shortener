@@ -5533,7 +5533,7 @@ function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("
         'url': this.url
       }).then(function (response) {
         if (response.data.error === undefined) {
-          _this.error = false;
+          _this.errorMessege = false;
           _this.shortenUrl = response.data.url;
           _this.previoulyCreated = response.data.exist;
           _this.result = true;
@@ -28978,7 +28978,7 @@ var render = function () {
   return _c("div", { staticClass: "input-group mb-3" }, [
     _vm.previoulyCreated
       ? _c("div", { staticClass: "valid-feedback standard" }, [
-          _vm._v("Your URL previously Shorted and here is your url"),
+          _vm._v("Your URL previously Shorted! Here is your shorted url"),
         ])
       : _vm._e(),
     _vm._v(" "),

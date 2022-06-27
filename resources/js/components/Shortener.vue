@@ -50,7 +50,7 @@ export default {
             .then(response => {
                     if(response.data.error === undefined ) 
                     {
-                        this.error = false
+                        this.errorMessege = false
                         this.shortenUrl = response.data.url
                         this.previoulyCreated = response.data.exist
                         this.result = true
